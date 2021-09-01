@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+body {
+    /* Smoothly transition the background color */
+    transition: background-color .5s;
+}
+
+/* Using flex with the column direction to
+align items in a vertical direction */
+.info {
+    height:auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    margin: 15px;
+    box-shadow: 10px 4px  14px  7px rgba(0, 0, 0, 0.4);
+    background: white;
+    border-radius: 20px;
+    height: 470px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: url(
+    "https://source.unsplash.com/Qrspubmx6kE/640x360");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+}
+
+/* Changing the font sizes to suitable ones */
+.now-playing {
+    font-size: 1rem;
+    font-family: "Jost", sans-serif;
+    text-shadow: 2px 4px  4px  rgba(0, 0, 0, 0.4);
+
+}
+
+.track-name {
+    font-size: 3rem;
+    font-family: "Jost", sans-serif;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.track-artist {
+    font-size: 1.5rem;
+    font-family: "Jost", sans-serif;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Using flex with the row direction to
+align items in a horizontal direction */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev-track {
+    padding: 10px;
+    opacity: 0.8;
+    transition: opacity .2s;
+    border-radius: 5px;
+    background: white;
+    margin-right: 5px;
+}
+
+.playpause-track{
+    padding: 15px;
+    opacity: 0.8;
+    transition: opacity .2s;
+    border-radius: 5px;
+    background: white;
+    margin-right: 5px;
+}
+.next-track {
+    padding: 10px;
+    opacity: 0.8;
+    transition: opacity .2s;
+    border-radius: 5px;
+    background: white;
+}
+
+/* Change the opacity when mouse is hovered */
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+    opacity: 1.0;
+    box-shadow: 10px 4px  14px  7px rgba(0, 0, 0, 0.4);
+}
+
+.slider_controls {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+/* Define the slider width so that it scales properly */
+.slider_container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: white;
+    width: 320px;
+    margin-top: 5px;
+    box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+
+.volume_slider_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+    box-shadow: 10px 4px 14px 7px rgba(0, 0, 0,0.4);
+    background: white;
+    border-radius: 20px;
+    height: 20px;
+    width: 200px;
+    align-content: stretch;
+}
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    border-radius: 2px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: gray;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Change the opacity when mouse is hovered */
+.seek_slider:hover,
+.volume_slider:hover {
+    opacity: 1.0;
+    box-shadow: 10px 4px 14px 7px rgba(0, 0, 0,0.4);
+}
+
+.seek_slider {
+    width: 60%;
+}
+
+.volume_slider {
+    width: 100%;
+}
+
+.current-time,
+.total-duration {
+    padding: 10px;
+    font-family: "Jost", sans-serif;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+    padding: 10px;
+}
+
+/* Change the mouse cursor to a pointer
+when hovered over */
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+    cursor: pointer;
+}
+
+
+.credit {
+    text-align: left;
+    text-shadow: 2px 4px  4px  rgba(0, 0, 0, 0.4);
+    font-family: "Jost", sans-serif;
+    font-size:0.7rem;
+}
