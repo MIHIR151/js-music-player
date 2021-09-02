@@ -51,7 +51,7 @@ function random_bg_color() {
     document.body.style.background = "rgb(" + red + "," + green + "," + blue + ")";
 }
 
-function loadTrack(track_index) {
+function loadTrack() {
     clearInterval(updateTimer);
     resetValues();
     curr_track.src = track_list[track_index].path;
