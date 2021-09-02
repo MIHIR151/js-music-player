@@ -84,13 +84,13 @@ function playpauseTrack() {
 function playTrack() {
     curr_track.play();
     isPlaying = true;
-    playpause_btn.innerHTML = '<i class="fas fa-pause fa-3x"></i>';
+    playpause_btn.innerHTML = '<em class="fas fa-pause fa-3x"></em>';
 }
 
 function pauseTrack() {
     curr_track.pause();
     isPlaying = false;
-    playpause_btn.innerHTML = '<i class="fas fa-play fa-3x"></i>';
+    playpause_btn.innerHTML = '<em class="fas fa-play fa-3x"></em>';
 }
 
 function nextTrack() {
