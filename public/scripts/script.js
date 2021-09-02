@@ -74,7 +74,7 @@ function resetValues() {
 }
 
 // Load the first track in the tracklist
-loadTrack(track_index);
+loadTrack();
 
 function playpauseTrack() {
     if (!isPlaying) playTrack();
@@ -97,7 +97,7 @@ function nextTrack() {
     if (track_index < track_list.length - 1)
         track_index += 1;
     else track_index = 0;
-    loadTrack(track_index);
+    loadTrack();
     playTrack();
 }
 
@@ -105,7 +105,7 @@ function prevTrack() {
     if (track_index > 0)
         track_index -= 1;
     else track_index = track_list.length;
-    loadTrack(track_index);
+    loadTrack();
     playTrack();
 }
 
